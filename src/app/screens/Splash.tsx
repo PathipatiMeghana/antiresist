@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router';
-import svgPaths from '@/imports/svg-2pqak78ml3';
 
 export default function Splash() {
   const navigate = useNavigate();
@@ -24,18 +23,8 @@ export default function Splash() {
       {/* Content Container */}
       <div className="relative w-full flex flex-col items-center px-6">
         {/* Icon Container */}
-        <div className="bg-white rounded-[24px] shadow-[0px_25px_50px_0px_rgba(0,0,0,0.25)] w-[143.958px] h-[143.958px] flex items-center justify-center mb-8">
-          <div className="w-[79.985px] h-[79.985px] relative">
-            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 74.9863 74.9863">
-              <path 
-                d={svgPaths.p12ca2400} 
-                stroke="#155DFC" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth="8.33181" 
-              />
-            </svg>
-          </div>
+        <div className="bg-white rounded-[24px] shadow-[0px_25px_50px_0px_rgba(0,0,0,0.25)] w-[143.958px] h-[143.958px] flex items-center justify-center mb-8 overflow-hidden">
+          <img src="/favicon.png" alt="AntiResist Logo" className="w-[100px] h-[100px] object-contain" />
         </div>
         
         {/* Brand Name */}
