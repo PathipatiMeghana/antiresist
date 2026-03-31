@@ -17,10 +17,10 @@ export default defineConfig({
     },
   },
   server: {
-    port: 8113,
+    port: 5173,
     proxy: {
       '/api': {
-        target: 'http://180.235.121.253:8113',
+        target: 'http://localhost:8113',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '/api'),
       },
